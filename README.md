@@ -10,7 +10,7 @@ Führen Sie die folgenden Schritte aus, um die Anwendung zu installieren:
 1. Klone das Repository:
 
    ```bash
-   git clone https://github.com/your-github-username/chromadb-viewer.git
+   git clone https://github.com/ill-yes/chromadb-viewer.git
    ```
 
 2. Wechseln Sie in das Verzeichnis des Projekts:

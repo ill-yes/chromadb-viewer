@@ -67,19 +67,7 @@ def view_database(client):
       st.write(f"Element {item_id_to_delete} wurde gelöscht.")
 
 def visualize(collection):
-  # items = collection.get()
-  # df = pd.DataFrame(items)
-  # st.table(df)
-  # data = collection.get()
-
-  data = collection.get()
-
-  # ids = data['ids']
-  # embeddings = data["embeddings"]
-  # metadata = data["metadatas"]
-  # documents = data["documents"]
-
-  df = pd.DataFrame.from_dict(data)
+  df = pd.DataFrame.from_dict(collection.get())
   st.markdown("### Collection: **%s**" % collection.name)
   st.dataframe(df, width=1400)
 
