@@ -1,46 +1,46 @@
 # ChromaDB Viewer
 
-## Beschreibung
-Diese Anwendung ist ein einfacher ChromaDB-Viewer, der mit Streamlit und Python entwickelt wurde. Sie ermöglicht es, Sammlungen aus ChromaDB zu visualisieren und zu manipulieren. Sie können Sammlungen auswählen, Elemente hinzufügen, aktualisieren und löschen.
+## Description
+This application is a simple ChromaDB viewer developed with Streamlit and Python. It allows you to visualize and manipulate collections from ChromaDB. You can select collections, add, update, and delete items.
 
 ## Installation
 
-Führen Sie die folgenden Schritte aus, um die Anwendung zu installieren:
+Follow the steps below to install the application:
 
-1. Klone das Repository:
+1. Clone the repository:
 
    ```bash
    git clone https://github.com/ill-yes/chromadb-viewer.git
    ```
 
-2. Wechseln Sie in das Verzeichnis des Projekts:
+2. Change to the project's directory:
 
    ```bash
    cd chromadb-viewer
    ```
 
-3. Installieren Sie die benötigten Abhängigkeiten mit pip:
+3. Install the required dependencies with pip:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-## Verwendung
+## Usage
 
-Um die Anwendung zu starten, führen Sie den folgenden Befehl aus:
+To start the application, execute the following command:
 
 ```bash
 streamlit run viewer.py
 ```
 
-Öffnen Sie dann Ihren Webbrowser und gehen Sie zu `http://localhost:8501`.
+Then open your web browser and go to `http://localhost:8501`.
 
 ## Features
 
-- **Sammlungen anzeigen:** Wählen Sie eine Sammlung aus, um die darin enthaltenen Elemente zu sehen.
-- **Elemente hinzufügen:** Fügen Sie neue Elemente zu einer Sammlung hinzu, indem Sie die Einbettung, die Metadaten und die ID des neuen Elements eingeben.
-- **Elemente aktualisieren:** Aktualisieren Sie vorhandene Elemente in einer Sammlung, indem Sie die ID des zu aktualisierenden Elements sowie die aktualisierte Einbettung und die Metadaten eingeben.
-- **Elemente löschen:** Löschen Sie Elemente aus einer Sammlung, indem Sie die ID des zu löschenden Elements eingeben.
+- **View collections:** Select a collection to see the items it contains.
+- **Add items:** Add new items to a collection by entering the embedding, metadata, and ID of the new item.
+- **Update items:** Update existing items in a collection by entering the ID of the item to be updated, along with the updated embedding and metadata.
+- **Delete items:** Delete items from a collection by entering the ID of the item to be deleted.
 
-## Hinweise
-Bitte stellen Sie sicher, dass Ihr ChromaDB-Server läuft und erreichbar ist, bevor Sie diese Anwendung starten. Sie können die Konfiguration Ihres ChromaDB-Servers in der `get_chroma_client()` Funktion in `viewer.py` anpassen.
+## Notes
+Please ensure your ChromaDB server is running and reachable before you start this application. You can adjust your ChromaDB server configuration in the `get_chroma_client()` function in `viewer.py`.
